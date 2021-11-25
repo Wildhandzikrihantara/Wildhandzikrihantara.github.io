@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+/* Set All */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Parallax */
+.parallax {
+    background-image: url(./property/food.jpg);
+    min-height: 650px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Order */
+.order {
+    text-align: center;
+    border: solid yellow 2px;
+    color: black;
+    background-color: yellow;
+    text-decoration: none;
+    border-radius: 16px;
+    margin: 0 540px 0 540px;
+    padding: 2px 6px;
+}
+
+
+/* Navbar */
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Nav Menu */
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li{
+    list-style: none;
+    margin-left: 24px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    padding: 6px 15px;
+}
+
+.menu a:hover{
+    border-top: 3px solid yellow;
+    color: white;
+}
+
+/* For About Us Page*/
+.aboutus {
+    height:660px;
+    background-color: white;
+    margin-top: 42px;
+    font-size:14px;
+}
+
+.aboutus p{
+    font-size: 28px;
+    border: yellow solid 1px ;
+    background-color: yellow;
+    padding: 14px 21px;
+    border-radius: 24px;
+}
+
+/* .aboutusbg {
+    background-image: url(./property/food.jpg);
+} */
+
+/* Special Menu H1 */
+.specialmenuh1 {
+    font-family: 'EB Garamond', serif;
+    color: white;
+    text-align: center;
+    padding-top: 55px;
+}
+
+/* Special Menu */
+.specialmenu {
+    font-size: 24px;
+    font-family: 'Dancing Script';
+    font-weight: bold;
+}
+
+/*For Team Page*/
+.teams { 
+    height:800px;
+    background-color: white;
+    font-size:36px;
+    margin: 42px 120px 24px 120px;
+}
+
+/* More Button */
+.more {
+    text-align: center;
+}
+
+.more a{
+    color: rgb(56, 52, 52);
+    text-decoration: none;
+}
+
+.more a:hover{
+    color: gray;
+}
+
+/*testimoni*/
+.testimoni {
+    height:600px;
+    background-color: white;
+    font-size:36px;
+}
+
+
+/* Star Rate */
+.starrate {
+    font-size: 12px;
+    background-color: white;
+    color: yellow;
+    border-radius: 8px;
+    padding: 11px;
+}
+
+/* Commentrate */
+.commentrate {
+    display: flex;
+    justify-content:space-between;
+}
+
+/* For Set Black Space */
+.space {
+    height: 62px;
+    background-color: black;
+    margin-top: 42px;
+    font-size:36px;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    position: block;
+    left: 0;
+    bottom: 0;
+    background-color: yellow;
+}
