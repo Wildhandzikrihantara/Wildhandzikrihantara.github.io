@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/* for set background*/
+body {
+    background-image: url(/public/img/pattern.jpg);
+}
+
+/* Navigation Bar*/
+header {
+    background-color: white;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+
+/* Navigation Menu Bar */ 
+li {
+    list-style: none;
+    float: left;
+    font-size: 18px;
+    padding: 17.5px 18px 0 0;
+    color: rgb(69, 69, 221);
+}
+
+/* Navigation Menu Bar Anchor */
+li a{
+    text-decoration: none;
+    color: blue;
+}
+
+/* Navigation Menu Bar Hover */
+ul a li:hover{
+    color: white;
+    background-color: rgb(133, 131, 131);
+    padding:16px 11px 15px 11px;
+}
+
+/* Section */
+section {
+    margin: 28px 196px 20px 196px;
+    padding: 20px 2px 20px 2px;
+    background-color: white;
+}
+
+/* Feature Post */
+section h1{
+    text-align: center;
+    padding-bottom: 62px;
+}
+
+/* content */
+article {
+    border-bottom: inset;
+    border-width: 4px;
+    border-color: lightgrey;
+    border-spacing: 20px;
+}
+
+/* title of content */
+article a{
+    text-decoration: none;
+    color: rgb(106, 19, 141);
+}
+
+/* hover title of content*/
+article a:hover{
+    color: blue;
+}
+
+/* description content */
+article p{
+    padding: 20px 0 20px 0;
+}
+
+/* footer */
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 24px 0 24px 0;
+}
+
+/* Wildhan Dzikrihantara_rpl02 */

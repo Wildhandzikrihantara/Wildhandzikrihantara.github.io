@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conditional HTML</title>
+</head>
+
+<body>
+    <h1>Berlatih Kondisional</h1>
+
+    <h3>Masukkan nama dan peranmu!</h3>
+    <form action="#" id="formConditional">
+        <input type="text" id="name" placeholder="Isi nama di sini">
+        <input type="text" id="role" placeholder="Isi peran di sini">
+        <input type="submit" value="Mulai Permainan">
+    </form>
+
+    <h3>Jawaban dari console game: </h3>
+    <div id="jawaban">
+        <p id="jawaban"></p>
+    </div>
+</body>
+
+<script>
+    var form = document.getElementById("formConditional")
+    var jawaban = document.getElementById("jawaban")
+
+    form.addEventListener("submit", function(e) {
+        e.preventDefault()
+
+        // Tuliskan Code kamu di sini
+       
+        var name = document.getElementById("name").value
+        var role = document.getElementById("role").value
+
+        // Kondisional
+        if(name == '' && role == ''){   // kondisi ketika nama kosong dan role kosong
+            var jawabanKonsol = "Nama harus diisi!";
+        }
+        else if(name != '' && role == ''){  // kondisi ketika nama tidak kosong dan role kosong
+            var jawabanKonsol = "Halo " + name + ", Pilih peranmu untuk memulai game!";
+        }
+        else if(name != '' && role == 'penyihir'){  // kondisi ketika nama tidak kosong dan role diisi penyihir
+            var jawabanKonsol = "Halo Penyihir " + name + ", Kamu dapat melihat siapa yang menjadi Warewolf!";
+        }
+        else if(name != '' && role == 'warewolf'){  // kondisi ketika nama tidak kosong dan role diisi warewolf
+            var jawabanKonsol = "Halo Warewolf " + name + ", kamu dapat memilih siapa yang akan kamu makan malam ini!";
+        }
+        else if(name != '' && role == 'rakjel'){    // kondisi ketika nama tidak kosong dan role diisi rakjel
+            var jawabanKonsol = "Halo Rakjel " + name + ", Kamu menjadi rakyat jelata";
+        }
+        else {  // kondisi ketika tidak ada yang memenuhi statment diatas(statment sebelumnya)
+            var jawabanKonsol = "Isi dengan lengkap dan benar!";
+        }
+
+        // menampilkan ke layar(output)
+        var jawabanKonsol = jawabanKonsol;
+        
+        // Code Sampai sini
+
+        jawaban.innerHTML = jawabanKonsol
+    })
+</script>
+
+</html>
